@@ -1,1 +1,149 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: black;
+    color: white !important;
+}
+
+hr {
+    border-color: white;
+}
+
+.puntero {
+    cursor: pointer;
+    transition: 1s;
+}
+
+.img-circle {
+    border-radius: 100%;
+    width: 150px;
+}
+
+.card-title,
+.card-text {
+    color: black;
+}
+
+.badge {
+    margin-left: 5px;
+}
+
+.btn-outline-success {
+    margin-left: 5px;
+}
+
+.img-thumb {
+    width: 50px;
+    height: 50px;
+}
+
+
+/* Animaciones */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+.card {
+    background: #0f0f0f;
+  }
+  
+  .card .badge{
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;;
+    margin-top: 20px;
+    box-shadow: 2px 2px 12px 5px rgba(0, 0, 0, 0.3);
+    
+  }
+  
+  .card h5{
+    color: #fff;
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .card img {
+    height: 400px;
+  }
+
+  
+
+  .puntero:hover{
+    transform: scale3d(1.1, 1.1, 0.5);
+     z-index: 9999;
+       box-shadow: 1px 1px 22px 10px rgba(0, 0, 0, 0.9);
+     transition: 1s;
+   }
+
+
+   .artista img,.contArtista img{
+    border-radius: 50%;
+    box-shadow: 1px 1px 22px 10px rgba(0, 0, 0, 0.3);
+  }
+
+
+
+  .contArtista td, .contArtista th{
+    padding: 20px;
+    border-bottom: solid 1px black !important;
+    
+  }
+  
+  .contArtista td:nth-child(1){
+   border-top-left-radius:  15px;
+     border-bottom-left-radius:  15px;
+  }
+
+  .contArtista td:nth-child(4){
+      border-top-right-radius:  15px;
+     border-bottom-right-radius:  15px;
+  }
+  
+  .contArtista tr:nth-child(1) td:nth-child(1){
+      border-top-left-radius:  0px;
+  }
+
+  .contArtista tr:nth-child(1) td:nth-child(4){
+    border-top-right-radius:  0px;
+  }
+
+  .contArtista th:nth-child(1){
+      border-top-left-radius:  15px;
+  }
+
+  .contArtista th:nth-child(4){
+    border-top-right-radius:  15px;
+  }
+
+ 
+
+
+
+  .contArtista iframe{
+    border-radius:  20px;
+    box-shadow: 1px 1px 15px 10px rgba(0, 0, 0, 0.2);
+   }
